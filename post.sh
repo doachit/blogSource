@@ -2,15 +2,23 @@
 
 hexo clean
 hexo g
-hexo -p 5000 server
 
-read -p "Do you want to deploy it to the github? (y/n)" answer
+
+
+read -p "Do you want to deploy it and update all changes to the github? (y/n)" answer
 
 # echo "Your answer is $answer."
 if  [[ "$answer" = y* ]]
 then 
+    #push the new file to the github!!!
+    git add *
+    git commit -m "update the source file"
+    git push origin master
+
+    echo "Update the source file to github successfully!!!"
+    
     hexo d
-    echo "Deploy hexo to github successfully!!"
+    echo "Deploy hexo to website successfully!!"
 fi
 
 
