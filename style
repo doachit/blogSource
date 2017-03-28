@@ -1,0 +1,18 @@
+[//]: # (
+<p id="div-border-left-yellow">XXX
+  <span id="inline-blue">站点配置文件</span>
+  <span id="inline-purple">主题配置文件</span>
+</p>
+)
+[//]: # (<!-- more -->)  
+<!---
+{% note default %} # 1 (md partial supported) {% endnote %}
+{% note primary %} # 2 (md partial supported) {% endnote %}
+{% note success %} # 3 (md partial supported) {% endnote %}
+{% note info %} # 4 (md partial supported) {% endnote %}
+{% note warning %} # 5 (md partial supported) {% endnote %}
+{% note danger %} # 6 (md partial supported) {% endnote %}
+<blockquote class="blockquote-center"> # 完结</blockquote>
+-->  
+  
+<blockquote class="blockquote-center">完</blockquote>
