@@ -27,6 +27,8 @@ fi
 
 #creat new file and auto-input the category
 read -p "input the new post name : " postname
+echo "The name of the new file is ----> $postname.md"
+hexo new "$postname"
 postname="./source/_posts/$postname.md"
 newline="categories: $selected"
 sed -i '/categories/d' $postname
@@ -34,4 +36,4 @@ sed -i "/date/a $newline" $postname
 cat style >> $postname
 
 #done
-echo "New file $postname.md has created successfully!!!"
+echo "New file in $postname has created successfully!!!"
