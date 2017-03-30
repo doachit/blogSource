@@ -26,14 +26,16 @@ else
 fi
 
 #creat new file and auto-input the category
-read -p "input the new post name : " postname
-echo "The name of the new file is ----> $postname.md"
-hexo new "$postname"
-postname="./source/_posts/$postname.md"
+read -p "input the new post name : " newfilename
+echo "The name of the new file is ----> $newfilename"
+hexo new "$newfilename"
+postname="./source/_posts/$newfilename.md"
+DATE=$(date +%F)
 newline="categories: $selected"
 sed -i '/categories/d' $postname
 sed -i "/date/a $newline" $postname
 cat style >> $postname
-
+postname_new="./source/_posts/$newfilename-$DATE.md"
+mv $postname $postname_new
 #done
-echo "New file in $postname has created successfully!!!"
+echo "New file in $postname_new has created successfully!!!"

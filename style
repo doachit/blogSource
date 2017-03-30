@@ -6,6 +6,7 @@
 )
 [//]: # (<!-- more -->)  
 <!---
+![JDBC示意图](/img/jdbc.jpg)
 {% note default %} # 1 (md partial supported) {% endnote %}
 {% note primary %} # 2 (md partial supported) {% endnote %}
 {% note success %} # 3 (md partial supported) {% endnote %}
