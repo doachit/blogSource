@@ -2,7 +2,7 @@
 title: 安卓BroadcastReceiver组件-监听系统广播 
 date: 2016-05-23 22:18:22
 categories: Android
-tags: 安卓,BroadcastReceiver,系统广播
+tags: [安卓,BroadcastReceiver,系统广播]
 grammar_cjkRuby: true
 ---
 
@@ -17,7 +17,7 @@ xml文件中注册。对于这两种方法来说，前者称之为动态注册�
 下面通过两个例子来介绍这两种方式的使用方法：
 # 1.动态注册-监听网络连接
 在网络连接状态发生改变时，系统会发出一个`android.net.conn.CONNECTIVITY_CHANGE`的action，我们需要在代码中添加对应的filter来响应即可。
-```
+```java
 public class MainActivity extends AppCompatActivity {
     private IntentFilter intentFilter;//
     private NetworkChangeReceiver networkChangeReceiver;//
@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
 <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
 ```
 **接着**新建一个class为`BootCompletedReceiver`,其继承自BroadcastReceiver：
-```
+```java
 public class BootCompletedReceiver extends BroadcastReceiver
 {
     @Override
