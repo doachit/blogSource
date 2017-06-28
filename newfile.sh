@@ -35,7 +35,7 @@ newline="categories: $selected"
 sed -i '/categories/d' $postname
 sed -i "/date/a $newline" $postname
 cat style >> $postname
-postname_new="./source/_posts/$newfilename-$DATE.md"
+postname_new="./source/_posts/$DATE-$newfilename.md"
 mv $postname $postname_new
 #done
 echo "New file in $postname_new has created successfully!!!"
