@@ -103,5 +103,5 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: git@github.com:SysFlat/SysFlat.github.io.git
+  repository: git@github.com:doachit/doachit.github.io.git
   branch: master

@@ -2,7 +2,7 @@
 title: JDBC统计查询条目数目
 date: 2016-06-20 22:18:22
 categories: java
-tags: JDBC,mysql
+tags: [JDBC,mysql]
 grammar_cjkRuby: true
 ---
 JDBC中可以执行基本的查询操作，有的时候我们会需要统计符合相关条件条目的数目，但是

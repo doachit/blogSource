@@ -2,7 +2,7 @@
 title: JDBC连接步骤 
 date: 2016-06-21 22:18:22
 categories: java
-tags: JDBC,数据库,JAVA
+tags: [JDBC,数据库,JAVA]
 grammar_cjkRuby: true
 ---
 JDBC全称为java database connection ，即java数据库连接，JDBC是连接Java应用程序和底层数据库的桥梁，示意图如下:
